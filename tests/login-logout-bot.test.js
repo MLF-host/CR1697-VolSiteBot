@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import { USER_NAME, PASSWORD } from './secrets.js';
 
 test('test', async ({ page }) => {
     // navigate to Portal login page
@@ -8,11 +9,11 @@ test('test', async ({ page }) => {
     // Click Username text box
   await page.getByRole('textbox', { name: 'Username' }).click();
     // Enter Username
-  await page.getByRole('textbox', { name: 'Username' }).fill('jalaketu@icloud.com');
+  await page.getByRole('textbox', { name: 'Username' }).fill(USER_NAME);
     // Click Password text box
   await page.getByRole('textbox', { name: 'Password' }).click();
     // Enter Password
-  await page.getByRole('textbox', { name: 'Password' }).fill('haMephorash1!');
+  await page.getByRole('textbox', { name: 'Password' }).fill(PASSWORD);
     // Click Log in button
   await page.getByRole('button', { name: 'Log in' }).click();
     // After redirect to Portal login page, click User Profile button
