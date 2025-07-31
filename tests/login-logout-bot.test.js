@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { USER_NAME, PASSWORD } from './secrets.js';
+// import { USER_NAME, PASSWORD } from './secrets.js';
 
 test('test', async ({ page }) => {
     // navigate to Portal login page
