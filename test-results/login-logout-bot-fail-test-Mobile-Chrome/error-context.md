@@ -1,0 +1,77 @@
+# Page snapshot
+
+```yaml
+- banner:
+  - button "Navigation menu"
+  - link:
+    - /url: javascript:void(0);
+  - button "Login or Register"
+- main:
+  - heading [level=2]
+  - paragraph
+  - heading "Login" [level=2]:
+    - strong: Login
+  - paragraph: Existing users please login before proceeding with volunteer shift registration. Your username is your email address.
+  - paragraph
+  - paragraph:
+    - text: New User?
+    - link:
+      - /url: https://serve.mlf.org/register/
+    - link "Register Here":
+      - /url: ./SelfRegister
+  - paragraph
+  - alert: Your login attempt has failed. Make sure the username and password are correct.
+  - textbox "Username": jalaketu@icloud.com
+  - textbox "Password": incorrectPassword
+  - button "Log in"
+  - link "Forgot your password?":
+    - /url: javascript:void(0)
+  - link:
+    - /url: javascript:void(0)
+  - paragraph
+  - paragraph:
+    - strong: Password Hint
+    - text: ": Includes at least 1 number, 1 special character, and is at least 8 characters long."
+  - paragraph
+  - paragraph
+  - paragraph
+- contentinfo:
+  - paragraph: Serving Goodness Since 1998
+  - link "CAREERS":
+    - /url: https://mlf.org/careers
+  - text: "|"
+  - link "FAQs":
+    - /url: https://mlf.org/faqs/
+  - text: "|"
+  - link "TRACKER LOGIN":
+    - /url: https://tracker.mlf.org/
+  - text: "|"
+  - link "GET OUR EMAILS":
+    - /url: https://mlf.org/email-signup/
+  - text: "|"
+  - link "PRIVACY POLICY":
+    - /url: https://mlf.org/privacy-policy/
+  - text: "|"
+  - link "DELETE MY INFORMATION":
+    - /url: https://serve.mlf.org/s/delete-my-information
+  - link "FIND A TRUCK":
+    - /url: https://mlf.org/truck-schedules/
+  - text: "|"
+  - link "APPLY FOR A HOME":
+    - /url: https://mlf.org/apply-for-a-home/
+  - text: "|"
+  - link "VOLUNTEER":
+    - /url: https://mlf.org/volunteer/
+  - text: "|"
+  - link "SHOP":
+    - /url: https://shop.mlf.org/
+  - text: "|"
+  - link "GIVE NOW":
+    - /url: https://give.mlf.org/give/138838/#!/donation/checkout?utm_source=website&utm_medium=footer-button&utm_campaign=give-now
+  - text: "|"
+  - link "GIVE MONTHLY":
+    - /url: https://give.mlf.org/campaign/everyday-angels/c192404?utm_source=website&utm_medium=footer-button&utm_campaign=give-monthly
+  - paragraph: © Mobile Loaves & Fishes, 2015-Present | 9301 Hog Eye Road, Suite 950, Austin, TX 78724
+  - paragraph: Mobile Loaves & Fishes is a US 501 (c)(3) public charity, EIN 74-2956081.
+- text: Login
+```
