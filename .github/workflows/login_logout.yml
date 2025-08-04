@@ -1,18 +1,18 @@
 name: Run Playwright Login Logout Bot Daily
 
-on:
+on: # Event that triggers the workflow
   schedule:
     - cron: '0 6 * * *' # Midnight CST = 6 AM UTC
   # workflow_dispatch: Optional: allows manual triggering
 
-jobs:
+jobs: # One or more jobs that run
   run-playwright:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Environment to run the job in
     env:
       USER_NAME: ${{ secrets.USER_NAME }}
       PASSWORD: ${{ secrets.PASSWORD }}
 
-    steps:
+    steps: # Series of shell commands
       - name: Checkout repo
         uses: actions/checkout@v3
 
@@ -27,5 +27,5 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Run Login Logout Bot
-        run: node tests/login-logout-bot.test.js
+      - name: Run Playwright tests #run Playwright test runner
+        run: npx playwright test
