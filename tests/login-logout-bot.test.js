@@ -1,6 +1,10 @@
 import { test, expect } from '@playwright/test';
 // import { USER_NAME, PASSWORD } from './secrets.js';
 
+// define environment variables for Github Actions
+const USER_NAME = process.env.USER_NAME;
+const PASSWORD = process.env.PASSWORD;
+
 test('test', async ({ page }) => {
     // navigate to Portal login page
   await page.goto('https://serve.mlf.org/s/');
