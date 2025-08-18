@@ -6,10 +6,7 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 
-# Local machine environment secrets
+# Local machine environment secrets and test designed to fail
 tests/
 /secrets.js
-
-# Test designed to fail
-tests/
 /login-logout-bot-fail.test.js
