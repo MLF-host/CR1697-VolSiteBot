@@ -9,3 +9,7 @@ node_modules/
 # Local machine environment secrets
 tests/
 /secrets.js
+
+# Test designed to fail
+tests/
+/login-logout-bot-fail.test.js
