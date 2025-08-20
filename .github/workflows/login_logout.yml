@@ -8,9 +8,6 @@ on: # Event that triggers the workflow
 jobs: # One or more jobs that run
   run-playwright:
     runs-on: ubuntu-latest # Environment to run the job in
-    env:
-      USER_NAME: ${{ secrets.USER_NAME }}
-      PASSWORD: ${{ secrets.PASSWORD }}
 
     steps: # Series of shell commands
       - name: Checkout repo
@@ -29,3 +26,6 @@ jobs: # One or more jobs that run
 
       - name: Run Playwright tests #run Playwright test runner
         run: npx playwright test
+        env: # Set the secrets as environment variables
+          USER_NAME: ${{ secrets.USER_NAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
